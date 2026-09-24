@@ -1,9 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Мой первый сайт</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omi Indie Creations</title>
+    <style>
+        /* Base page styling */
+        body {
+            background-color: #000000;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Content wrapper */
+        .container {
+            max-width: 1750px;
+            margin: 0 auto;
+            padding: 30px 20px 120px 20px; 
+        }
+
+        /* Developer banner */
+        .banner-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffffff;
+            font-size: 1.8rem;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Красивый горизонтальный разделитель над продуктом */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #333333, transparent);
+            border: none;
+            margin: 50px auto 30px auto;
+            max-width: 600px;
+        }
+
+        .welcome-text {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #aaaaaa;
+        }
+		
+		.welcome-text a {
+            color: #f7a300; /* Unity orange tone */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Support section styling */
+        .support-info {
+            background-color: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 25px 0;
+            font-size: 1rem;
+        }
+
+        .support-info a {
+            color: #f7a300; /* Unity orange tone */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .support-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Product section text */
+        .product-desc {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #cccccc;
+            margin-bottom: 25px;
+        }
+
+        .store-link {
+            color: #2196F3;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .store-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Buttons layout */
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 320px;
+            margin: 30px auto 0 auto;
+        }
+
+        /* Universal button class */
+        .btn {
+            display: block;
+            padding: 14px 20px;
+            font-weight: bold;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        /* Demo button (ZIP) */
+        .btn-demo {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-demo:hover {
+            background-color: #e0e0e0;
+        }
+
+        /* Documentation button (PDF) */
+        .btn-pdf {
+            background-color: #f7a300;
+            color: #000000;
+        }
+
+        .btn-pdf:hover {
+            background-color: #ffb733;
+        }
+    </style>
 </head>
 <body>
-    <h1>Привет, мир! Сайт на GitHub Pages работает.</h1>
+
+    <div class="container">
+        <!-- Developer Banner -->
+        <img src="banner_small.png" alt="Developer Banner" class="banner-img">
+
+        <!-- Welcome Section -->
+        <p class="welcome-text">
+            Thank you for visiting my publisher page. Here you can find official tools, 
+            documentation, and live demos designed to speed up your game development workflow in Unity.
+        </p>
+		
+		<p class="welcome-text">
+            For questions, bug reports, or customer support, please contact me at:<br>
+            <a href="mailto:Omish1990@proton.me">Omish1990@proton.me</a>
+        </p>
+
+        <!-- Разделительная линия между секциями -->
+        <hr class="section-divider">
+
+        <!-- Product Section -->
+        <h2>EasyFieldPro: Map Creator and Pathfinding</h2>
+        <p class="product-desc">
+            An expandable 2D pathfinding framework with basic game infrastructure.<br>
+			Supports square/hex grids, freeform spatial fields, runtime map editing and optimizations.
+            Available in <a href="https://u3d.as/49nf" target="_blank" class="store-link">Unity Asset Store</a>.
+        </p>
+
+        <!-- Download Buttons -->
+        <div class="button-group">
+		
+            <a href="https://youtu.be/ZZ8KbbuHZsk" target="_blank" class="btn btn-demo">Watch Demo Video</a>
+            
+            <a href="https://drive.google.com/file/d/1cJD2GBks7SWJPLofPHBAsbqxeNC-IDO4/" target="_blank" download class="btn btn-demo">Download Demo Build (zip)</a>            
+            
+            <a href="Documentation for Eazyfield (Zenject Edition).pdf" target="_blank" download class="btn btn-pdf">Download PDF Documentation</a>
+        </div>
+    </div>
+
 </body>
 </html>
